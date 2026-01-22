@@ -13,7 +13,6 @@ class Solution:
                 span += 1
                 j -= 1
             sol.append(span)
-            
         return sol
 
 
