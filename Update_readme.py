@@ -1,4 +1,16 @@
-# 🚀 Python & Data Engineering Portfolio | Ansh Dabral
+import os
+
+def pod_done():
+    count = 0
+    for root, dirs, files in os.walk('./2026'):
+        for file in files:
+            if file.endswith('.py'):
+                count += 1
+    return count
+
+POD_Done = pod_done()
+
+context  = f"""# 🚀 Python & Data Engineering Portfolio | Ansh Dabral
 
 Hi there! 👋 I’m **Ansh Dabral**, a passionate **Data Engineer** focused on building scalable data solutions and mastering Pythonic principles. This repository serves as a daily log of my technical growth, covering algorithmic problem-solving and deep dives into Object-Oriented Programming (OOP).
 
@@ -40,11 +52,14 @@ Understanding the "how" and "why" behind Python objects is essential for writing
 
 ## 📈 Goals for 2026
 - [ ] **Master Distributed Computing:** Deep dive into PySpark and Databricks.
-- [ ] **Algorithmic Mastery:** Complete 300+ LeetCode problems. Score : 15/300 
+- [ ] **Algorithmic Mastery:** Complete 300+ LeetCode problems. Score : {POD_Done}/300 
 - [ ] **End-to-End Projects:** Build a full-scale ETL pipeline using FastAPI and Celery.
 
 ---
 
 ## 📫 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-username)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)"""
+
+with open("README.md", "w", encoding="utf-8") as f:
+    f.write(context)
