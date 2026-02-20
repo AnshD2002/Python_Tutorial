@@ -40,7 +40,7 @@ Understanding the "how" and "why" behind Python objects is essential for writing
 
 ## 📈 Goals for 2026
 - [ ] **Master Distributed Computing:** Deep dive into PySpark and Databricks.
-- [ ] **Algorithmic Mastery:** Complete 300+ LeetCode problems. Score : 19/300 
+- [ ] **Algorithmic Mastery:** Complete 300+ LeetCode problems. Score : 20/300 
 - [ ] **End-to-End Projects:** Build a full-scale ETL pipeline using FastAPI and Celery.
 
 ---
